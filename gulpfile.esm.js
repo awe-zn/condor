@@ -24,7 +24,7 @@ export default () => {
     server: {
       baseDir: './',
     },
-    startPath: 'pages/auth/login.html',
+    startPath: 'pages/student/auth/login.html',
   });
 
   gulp.watch(

@@ -27,7 +27,7 @@ button.bg-primary:focus {
 
 /*--- gradient-backgrounds --*/
 .bg-primary-gradient {
-  background: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%) !important;
+  background: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%) !important;
 }
 
 a.bg-primary-gradient:hover,
@@ -145,7 +145,7 @@ a.text-primary:focus {
 
 .btn-primary-gradient {
   color: #fff;
-  background: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%) !important;
+  background: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%) !important;
   border-color: #6259ca !important;
   box-shadow: 0 5px 10px rgba(98, 89, 202, 0.3);
 }
@@ -400,9 +400,9 @@ a.text-primary:focus {
 .header-bg {
   background: #6259ca;
   /* fallback for old browsers */
-  background: -webkit- linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%) !important;
+  background: -webkit- linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%) !important;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%) !important;
+  background: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%) !important;
 }
 
 .footer a:not(.btn) {
@@ -498,7 +498,7 @@ a.chip:hover {
 }
 
 #back-to-top {
-  background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
 }
 
 #back-to-top:hover {
@@ -540,7 +540,7 @@ a.chip:hover {
 /* --------Added--------- css*/
 .wizard-card .moving-tab {
   margin-top: 5px;
-  background: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
 }
 
 .cal1 .clndr .clndr-table .header-days {
@@ -668,16 +668,16 @@ div.conv-form-wrapper div#messages div.message.from {
 
 .product-grid6 .icons li a:hover {
   color: #fff;
-  background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
 }
 
 .product-grid6 .icons li a:after,
 .product-grid6 .icons li a:before {
-  background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
 }
 
 .card-counter.primary {
-  background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
   color: #fff;
 }
 
@@ -688,18 +688,18 @@ div.conv-form-wrapper div#messages div.message.from {
 
 @media (max-width: 767.98px) and (min-width: 576px) {
   .search-show .search-element {
-    background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+    background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
   }
 }
 
 @media (max-width: 575.98px) {
   .search-show .search-element {
-    background-image: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+    background-image: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
   }
 }
 
 .text-primary-gradient {
-  background: linear-gradient(to bottom right, #9e88f5 0%, #6259ca 100%);
+  background: linear-gradient(to bottom right, #0f5be3 0%, #07b1c2 66%, #02eaae 100%);
 }
 
 .chat .msg_head,
