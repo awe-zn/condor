@@ -45,7 +45,7 @@
 
 .color-header .app-header,
 .color-header .hor-header {
-  background: #6259ca;
+  background: #07b1c1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -184,7 +184,7 @@
 
 .dark-mode.color-header .app-header,
 .dark-mode.color-header .hor-header {
-  background: #6259ca;
+  background: #07b1c1;
 }
 
 .dark-mode.color-header .header .nav-link.icon {
@@ -699,7 +699,7 @@
 
 .light-menu .slide-menu li.active>a,
 .light-menu .slide-menu li:hover>a {
-  color: #6259ca !important;
+  color: #07b1c1 !important;
 }
 
 .light-menu .side-item.side-item-category {
@@ -750,7 +750,7 @@
 
 .dark-mode.light-menu .slide-menu li.active>a,
 .dark-mode.light-menu .slide-menu li:hover>a {
-  color: #6259ca !important;
+  color: #07b1c1 !important;
 }
 
 @media (min-width: 768px) {
@@ -857,7 +857,7 @@
 }
 
 .color-menu .app-sidebar .side-header {
-  background: #6259ca;
+  background: #07b1c1;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -965,7 +965,7 @@
 }
 
 .dark-mode.color-menu .app-sidebar {
-  background: #6259ca;
+  background: #07b1c1;
 }
 
 .dark-mode.color-menu .app-sidebar .side-menu .slide a {
@@ -1441,7 +1441,7 @@
 
 /*color-hormenu*/
 .color-hormenu .horizontal-main.hor-menu {
-  background: #6259ca;
+  background: #07b1c1;
 }
 
 .color-hormenu .horizontalMenu>.horizontalMenu-list>li>a {
@@ -1477,7 +1477,7 @@
 
 @media only screen and (max-width: 991px) {
   .color-hormenu.active .horizontalMenu>.horizontalMenu-list {
-    background: #6259ca;
+    background: #07b1c1;
   }
 
   .color-hormenu .horizontalMenu>.horizontalMenu-list>li>a {
@@ -1550,13 +1550,13 @@
 }
 
 .dark-mode.color-hormenu .horizontal-main.hor-menu {
-  background: #6259ca;
+  background: #07b1c1;
   box-shadow: none;
 }
 
 @media only screen and (max-width: 991px) {
   .dark-mode.color-hormenu.active .horizontalMenu>.horizontalMenu-list {
-    background: #6259ca;
+    background: #07b1c1;
   }
 }
 
@@ -1816,13 +1816,13 @@
 }
 
 .dark-mode.dark-hormenu .horizontal-main.hor-menu {
-  background: #6259ca;
+  background: #07b1c1;
   box-shadow: none;
 }
 
 @media only screen and (max-width: 991px) {
   .dark-mode.dark-hormenu.active .horizontalMenu>.horizontalMenu-list {
-    background: #6259ca;
+    background: #07b1c1;
   }
 }
 

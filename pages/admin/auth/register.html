@@ -10,7 +10,7 @@
 
     <link rel="icon" href="../../../assets/images/condor/icon.svg" />
 
-    <title>Condor Class - Cadastro</title>
+    <title>Condor Class - Criar conta</title>
 
     <link
       href="../../../assets/plugins/bootstrap/css/bootstrap.min.css"
@@ -36,7 +36,7 @@
     <link href="../../../assets/css/color1.css" rel="stylesheet" />
   </head>
 
-  <body class="dark-mode">
+  <body>
     <div class="login-img">
       <div id="global-loader">
         <img
@@ -47,27 +47,57 @@
       </div>
 
       <div class="page">
-        <div class="">
-          <div class="col col-login mx-auto">
-            <div class="text-center">
-              <img
-                src="../../../assets/images/condor/logo/white.svg"
-                class="header-brand-img"
-                alt=""
-              />
-            </div>
-          </div>
+        <div>
           <div class="container-login100">
             <div class="wrap-login100 p-0">
               <div class="card-body">
                 <form class="login100-form">
-                  <span class="login100-form-title">Cadastro</span>
+                  <div class="text-center">
+                    <img
+                      src="../../../assets/images/condor/logo/default.svg"
+                      class="header-brand-img m-0 mb-6 me-0"
+                      alt=""
+                    />
+                  </div>
+                  <span class="login100-form-title">Criar conta</span>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <div class="select-type-user">
+                        <input type="radio" name="type" id="student" />
+                        <label for="student">
+                          <div class="ratio ratio-1x1">
+                            <img
+                              src="../../../assets/images/condor/students.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                          <span>Estudante</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="select-type-user">
+                        <input type="radio" name="type" id="mentor" />
+                        <label for="mentor">
+                          <div class="ratio ratio-1x1">
+                            <img
+                              src="../../../assets/images/condor/teacher.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                          <span>Mentor</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div class="wrap-input100">
                     <input
                       class="input100"
                       type="text"
                       name="email"
-                      placeholder="Nome de usuário"
+                      placeholder="Nome completo"
                     />
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
@@ -109,7 +139,7 @@
                       href="./login.html"
                       class="login100-form-btn btn-primary"
                     >
-                      Register
+                      Criar conta
                     </a>
                   </div>
                   <div class="text-center pt-3">
@@ -117,7 +147,7 @@
                       Já tem uma conta?<a
                         href="./login.html"
                         class="text-primary ms-1"
-                        >Login</a
+                        >Entrar</a
                       >
                     </p>
                   </div>
@@ -130,9 +160,6 @@
                   </a>
                   <a href="" class="social-login text-center me-4">
                     <i class="fa fa-facebook"></i>
-                  </a>
-                  <a href="" class="social-login text-center">
-                    <i class="fa fa-twitter"></i>
                   </a>
                 </div>
               </div>
