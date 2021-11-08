@@ -427,7 +427,7 @@ a.text-primary:focus {
 }
 
 .login-img {
-  background: #07b1c1;
+  background-image: url("../images/condor/bg-login.png");
 }
 
 .avatar {
