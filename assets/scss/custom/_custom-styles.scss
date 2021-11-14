@@ -2789,14 +2789,14 @@ svg.table-delete {
 }
 
 .sidebar .tab-menu-heading {
-  background: #6259ca;
+  background: $primary-1;
   color: #fff;
 }
 
 .sidebar .user-pro-body img {
   display: block;
   margin: 0 auto 0px;
-  border: 2px solid #353d9f;
+  border: 2px solid $primary-1;
   box-shadow: 0px 5px 5px 0px rgba(44, 44, 44, 0.2);
   padding: 3px;
   background: #e8e9f5;
@@ -2822,7 +2822,7 @@ svg.table-delete {
 .sidebar-right .tab-content i {
   font-size: 18px;
   line-height: 2;
-  background-color: #6259ca;
+  background-color: $primary-1;
   border-radius: 50%;
   height: 40px;
   width: 40px;

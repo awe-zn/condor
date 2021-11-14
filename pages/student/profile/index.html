@@ -10,7 +10,7 @@
 
     <link rel="icon" href="../../../assets/images/condor/icon.svg" />
 
-    <title>Condor Class - Início</title>
+    <title>Condor Class - Perfil do usuário</title>
 
     <link
       href="../../../assets/plugins/bootstrap/css/bootstrap.min.css"
@@ -135,6 +135,7 @@
           <div class="container-fluid">
             <div class="d-flex">
               <a
+                aria-label="Hide Sidebar"
                 class="app-sidebar__toggle"
                 data-bs-toggle="sidebar"
                 href="#"
@@ -167,6 +168,9 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent-4"
+                  aria-controls="navbarSupportedContent-4"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
                   <span
                     class="navbar-toggler-icon fe fe-more-vertical text-dark"
@@ -280,12 +284,285 @@
           <div class="side-app">
             <div class="page-header">
               <div>
-                <h1 class="page-title">Buscar mentores</h1>
+                <h1 class="page-title">Perfil do usuário</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Condor Class</a></li>
-                  <li class="breadcrumb-item"><a href="#">Mentores</a></li>
-                  <li class="breadcrumb-item active">Buscar</li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Perfil
+                  </li>
                 </ol>
+              </div>
+            </div>
+
+            <div class="row" id="user-profile">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="wideget-user">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xl-6">
+                          <div class="wideget-user-desc d-sm-flex">
+                            <div class="wideget-user-img">
+                              <img
+                                class=""
+                                src="../../../assets/images/users/8.jpg"
+                                alt="img"
+                              />
+                            </div>
+                            <div class="user-wrap">
+                              <h4>Elizabeth Dyer</h4>
+                              <h6 class="text-muted mb-3">
+                                Membro desde: Novembro/2017
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xl-6">
+                          <div class="text-xl-right mt-4 mt-xl-0">
+                            <a href="./edit.html" class="btn btn-primary"
+                              >Editar perfil</a
+                            >
+                          </div>
+                          <div class="mt-5">
+                            <div
+                              class="
+                                main-profile-contact-list
+                                float-md-end
+                                d-lg-flex
+                              "
+                            >
+                              <div class="me-5">
+                                <div class="media">
+                                  <div class="media-icon bg-primary me-3 mt-1">
+                                    <i
+                                      class="fe fe-airplay fs-20 text-white"
+                                    ></i>
+                                  </div>
+                                  <div class="media-body">
+                                    <span class="text-muted"
+                                      >Mentorias assistidas</span
+                                    >
+                                    <div class="fw-semibold fs-25">24</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media-heading">
+                      <h5><strong>Informação pessoal</strong></h5>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table row table-borderless">
+                        <tbody class="col-lg-12 col-xl-6 p-0">
+                          <tr>
+                            <td>
+                              <strong>Nome completo:</strong> Elizabeth Dyer
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><strong>Localização:</strong> USA</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Idiomas:</strong> English, German,
+                              Spanish.
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tbody class="col-lg-12 col-xl-6 p-0">
+                          <tr>
+                            <td><strong>Website:</strong> abcdz.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>E-mail:</strong>
+                              georgemestayer@abcdz.com
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <strong>Telefone:</strong> +55 (84) 2542-3562
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row profie-img">
+                      <div class="col-md-12">
+                        <div class="media-heading">
+                          <h5><strong>Biografia</strong></h5>
+                        </div>
+                        <p>
+                          Nam libero tempore, cum soluta nobis est eligendi
+                          optio cumque nihil impedit quo minus id quod maxime
+                          placeat facere possimus, omnis voluptas assumenda est,
+                          omnis dolor repellendus
+                        </p>
+                        <p class="mb-0">
+                          because it is pleasure, but because those who do not
+                          know how to pursue pleasure rationally encounter but
+                          because those who do not know how to pursue
+                          consequences that are extremely painful. Nor again is
+                          there anyone who loves or pursues or desires to obtain
+                          pain of itself, because it is pain, but because
+                          occasionally circumstances occur in which toil and
+                          pain can procure him some great pleasure.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Informações de pagamento</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-pay">
+                      <ul class="tabs-menu nav">
+                        <li class="">
+                          <a href="#tab20" class="active" data-bs-toggle="tab"
+                            ><i class="fa fa-credit-card"></i> Cartão de
+                            crédito</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#tab21" data-bs-toggle="tab" class=""
+                            ><i class="fa fa-paypal"></i> Paypal</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#tab22" data-bs-toggle="tab" class=""
+                            ><i class="fa fa-university"></i> Transferência</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane active show" id="tab20">
+                          <div
+                            class="
+                              bg-danger-transparent-2
+                              text-danger
+                              br-3
+                              mb-4
+                            "
+                            role="alert"
+                          >
+                            Por favor, insira dados válidos
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Nome no cartão</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Nome conforme no cartão"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Número do cartão</label>
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="XXXX XXXX XXXX XXXX"
+                              />
+                              <span
+                                class="
+                                  input-group-text
+                                  btn btn-success
+                                  shadow-none
+                                "
+                              >
+                                <i class="fa fa-cc-visa"></i> &nbsp;
+                                <i class="fa fa-cc-amex"></i> &nbsp;
+                                <i class="fa fa-cc-mastercard"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <div class="form-group">
+                                <label class="form-label"
+                                  >Data de expiração</label
+                                >
+                                <div class="input-group">
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="MM"
+                                    name="Month"
+                                  />
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="AA"
+                                    name="Year"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group">
+                                <label class="form-label"
+                                  >CVV <i class="fa fa-question-circle"></i
+                                ></label>
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  required=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-lg btn-primary"
+                            >Confirmar</a
+                          >
+                        </div>
+                        <div class="tab-pane" id="tab21">
+                          <p>
+                            PayPal é uma maneira fácil de realizar pagamentos
+                            online
+                          </p>
+                          <p>
+                            <a href="#" class="btn btn-primary"
+                              ><i class="fa fa-paypal"></i> Acessar meu
+                              Paypal</a
+                            >
+                          </p>
+                          <p class="mb-0">
+                            <strong>Atenção:</strong> Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed
+                            quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt.
+                          </p>
+                        </div>
+                        <div class="tab-pane" id="tab22">
+                          <p>Dados da conta bancária</p>
+                          <dl class="card-text">
+                            <dt>Banco:</dt>
+                            <dd>Itaú - 0456</dd>
+                          </dl>
+                          <dl class="card-text">
+                            <dt>Número da conta:</dt>
+                            <dd>67542897653214</dd>
+                          </dl>
+                          <p class="mb-0">
+                            <strong>Atenção:</strong> Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed
+                            quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

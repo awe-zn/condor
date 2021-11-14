@@ -3,7 +3,7 @@
 a {
   color: $primary-1;
   &:hover {
-    color: #6259ca;
+    color: $primary-1-active;
   }
 }
 .bg-primary {
@@ -47,7 +47,7 @@ button.bg-primary-gradient {
 a.text-primary {
   &:hover,
   &:focus {
-    color: #4e12b6 !important;
+    color: $primary-1-active !important;
   }
 }
 .table-primary {
@@ -78,9 +78,9 @@ a.text-primary {
   }
 }
 .btn-primary {
-  color: #fff !important;
-  background: $primary-1 !important;
-  border-color: #6a62cc !important;
+  color: #fff;
+  background: $primary-1;
+  border-color: $primary-1;
   &:hover {
     color: #fff;
     background-color: #5a51c7;
@@ -88,7 +88,7 @@ a.text-primary {
   }
   &:focus,
   &.focus {
-    box-shadow: 0 0 0 2px rgba(98, 89, 202, 0.9);
+    box-shadow: 0 0 0 2px $info;
   }
   &.disabled,
   &:disabled {
@@ -795,7 +795,7 @@ div.conv-form-wrapper div#messages div.message.from {
   }
   a.text-primary:hover,
   a.text-primary:focus {
-    color: #746ae8 !important;
+    color: $primary-1-active !important;
   }
   .panel-default > .panel-heading,
   .panel-tabs a {

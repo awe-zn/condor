@@ -81,7 +81,7 @@
             </a>
           </div>
           <ul class="side-menu">
-            <li><h3>Main</h3></li>
+            <li><h3>Menu</h3></li>
             <li class="slide">
               <a class="side-menu__item" href="./">
                 <i class="side-menu__icon fe fe-home"></i>
@@ -99,17 +99,33 @@
                   <a href="./mentors/search.html" class="slide-item">Buscar</a>
                 </li>
                 <li>
-                  <a href="./mentors/history.html" class="slide-item"
-                    >Histórico</a
-                  >
+                  <a href="./mentors/agenda.html" class="slide-item">
+                    Agenda
+                  </a>
+                </li>
+                <li>
+                  <a href="./mentors/history.html" class="slide-item">
+                    Histórico
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="slide">
-              <a class="side-menu__item" href="./profile.html">
+              <a class="side-menu__item" data-bs-toggle="slide" href="#">
                 <i class="side-menu__icon fe fe-user"></i>
                 <span class="side-menu__label">Perfil do usuário</span>
+                <i class="angle fa fa-angle-right"></i>
               </a>
+              <ul class="slide-menu">
+                <li>
+                  <a href="./profile/" class="slide-item">Ver perfil</a>
+                </li>
+                <li>
+                  <a href="./profile/edit.html" class="slide-item"
+                    >Editar perfil</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </aside>
@@ -244,18 +260,7 @@
                   <a class="dropdown-item" href="#">
                     <i class="dropdown-icon fe fe-user"></i> Profile
                   </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon fe fe-mail"></i> Inbox
-                    <span class="badge bg-primary float-end">3</span>
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon fe fe-settings"></i> Settings
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon fe fe-alert-triangle"></i> Need
-                    help?
-                  </a>
-                  <a class="dropdown-item" href="login.html">
+                  <a class="dropdown-item" href="./auth/login.html">
                     <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
                   </a>
                 </div>
@@ -315,7 +320,7 @@
                             ms-auto
                           "
                         >
-                          <i class="fe fe-trending-up text-white mb-5"></i>
+                          <i class="fe fe-dollar-sign text-white mb-5"></i>
                         </div>
                       </div>
                     </div>
@@ -349,7 +354,7 @@
                             ms-auto
                           "
                         >
-                          <i class="fe fe-trending-up text-white mb-5"></i>
+                          <i class="fe fe-airplay text-white mb-5"></i>
                         </div>
                       </div>
                     </div>
@@ -528,55 +533,145 @@
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>Joan Powell</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-2"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Joan Powell
+                              </div>
+                            </td>
                             <td>23</td>
                             <td>Associate Developer</td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>Gavin Gibson</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Gavin Gibson
+                              </div>
+                            </td>
                             <td>122</td>
                             <td>Account manager</td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td>Julian Kerr</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Julian Kerr
+                              </div>
+                            </td>
                             <td>75</td>
                             <td>Senior Javascript Developer</td>
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td>Cedric Kelly</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Cedric Kelly
+                              </div>
+                            </td>
                             <td>24</td>
                             <td>Accountant</td>
                           </tr>
                           <tr>
                             <td>5</td>
-                            <td>Samantha May</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Samantha May
+                              </div>
+                            </td>
                             <td>92</td>
                             <td>Junior Technical Author</td>
                           </tr>
                           <tr>
                             <td>6</td>
-                            <td>Emanuelly Batista</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Emanuelly Batista
+                              </div>
+                            </td>
                             <td>92</td>
                             <td>Manager Accountant</td>
                           </tr>
                           <tr>
                             <td>7</td>
-                            <td>João Pedro Macedo Neto</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                João Pedro Macedo Neto
+                              </div>
+                            </td>
                             <td>92</td>
                             <td>Senior Technical Author</td>
                           </tr>
                           <tr>
                             <td>8</td>
-                            <td>Lorenzo Franco</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Lorenzo Franco
+                              </div>
+                            </td>
                             <td>92</td>
                             <td>Associate Technical</td>
                           </tr>
                           <tr>
                             <td>9</td>
-                            <td>Alexandre Franco</td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <span
+                                  class="avatar avatar-md brround me-1"
+                                  style="
+                                    background-image: url(../../assets/images/users/11.jpg);
+                                  "
+                                ></span>
+                                Alexandre Franco
+                              </div>
+                            </td>
                             <td>92</td>
                             <td>Junior Author</td>
                           </tr>
