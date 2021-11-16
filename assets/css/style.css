@@ -10877,7 +10877,7 @@ progress {
 
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 0;
 }
 
