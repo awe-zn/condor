@@ -1,293 +1,467 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="icon" href="../../../assets/images/condor/icon.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Condor Class - Início</title>
+  <link rel="icon" href="../../../assets/images/condor/icon.svg" />
 
-    <link
-      href="../../../assets/plugins/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/style.css" rel="stylesheet" />
+  <title>Condor Class - Buscar mentores</title>
 
-    <link href="../../../assets/css/skin-modes.css" rel="stylesheet" />
-    <link href="../../../assets/css/sidemenu.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../../assets/css/style.css" rel="stylesheet" />
 
-    <link
-      href="../../../assets/plugins/charts-c3/c3-chart.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/p-scroll/perfect-scrollbar.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/icons.css" rel="stylesheet" />
-    <link href="../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
-    <link
-      href="../../../assets/plugins/select2/select2.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/datatable/css/dataTables.bootstrap5.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/datatable/responsive.bootstrap5.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/color1.css" rel="stylesheet" />
-  </head>
+  <link href="../../../assets/css/skin-modes.css" rel="stylesheet" />
+  <link href="../../../assets/css/sidemenu.css" rel="stylesheet" />
 
-  <body class="app sidebar-mini">
-    <div id="global-loader">
-      <img
-        src="../../../assets/images/loader.svg"
-        class="loader-img"
-        alt="Loader"
-      />
-    </div>
+  <link href="../../../assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="../../../assets/css/icons.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/datatable/css/dataTables.bootstrap5.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/datatable/responsive.bootstrap5.css" rel="stylesheet" />
+  <link href="../../../assets/css/color1.css" rel="stylesheet" />
+</head>
 
-    <div class="page">
-      <div class="page-main">
-        <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
-        <aside class="app-sidebar">
-          <div class="side-header">
-            <a class="header-brand1" href="#">
-              <img
-                src="../../../assets/images/condor/logo/white.svg"
-                class="header-brand-img desktop-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/brand/white.svg"
-                class="header-brand-img toggle-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/brand/default.svg"
-                class="header-brand-img light-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/logo/default.svg"
-                class="header-brand-img light-logo1"
-                alt="logo"
-              />
+<body class="app sidebar-mini">
+  <div id="global-loader">
+    <img src="../../../assets/images/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+
+  <div class="page">
+    <div class="page-main">
+      <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+      <aside class="app-sidebar">
+        <div class="side-header">
+          <a class="header-brand1" href="#">
+            <img src="../../../assets/images/condor/logo/white.svg" class="header-brand-img desktop-logo" alt="logo" />
+            <img src="../../../assets/images/condor/brand/white.svg" class="header-brand-img toggle-logo" alt="logo" />
+            <img src="../../../assets/images/condor/brand/default.svg" class="header-brand-img light-logo" alt="logo" />
+            <img src="../../../assets/images/condor/logo/default.svg" class="header-brand-img light-logo1" alt="logo" />
+          </a>
+        </div>
+        <ul class="side-menu">
+          <li>
+            <h3>Menu</h3>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" href="../">
+              <i class="side-menu__icon fe fe-home"></i>
+              <span class="side-menu__label">Início</span>
             </a>
-          </div>
-          <ul class="side-menu">
-            <li><h3>Menu</h3></li>
-            <li class="slide">
-              <a class="side-menu__item" href="../">
-                <i class="side-menu__icon fe fe-home"></i>
-                <span class="side-menu__label">Início</span>
-              </a>
-            </li>
-            <li class="slide">
-              <a class="side-menu__item" data-bs-toggle="slide" href="#">
-                <i class="side-menu__icon fe fe-users"></i>
-                <span class="side-menu__label">Mentores</span>
-                <i class="angle fa fa-angle-right"></i>
-              </a>
-              <ul class="slide-menu">
-                <li>
-                  <a href="../mentors/search.html" class="slide-item">Buscar</a>
-                </li>
-                <li>
-                  <a href="../mentors/agenda.html" class="slide-item">Agenda</a>
-                </li>
-                <li>
-                  <a href="../mentors/history.html" class="slide-item"
-                    >Histórico</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="slide">
-              <a class="side-menu__item" data-bs-toggle="slide" href="#">
-                <i class="side-menu__icon fe fe-user"></i>
-                <span class="side-menu__label">Perfil do usuário</span>
-                <i class="angle fa fa-angle-right"></i>
-              </a>
-              <ul class="slide-menu">
-                <li>
-                  <a href="../profile/" class="slide-item">Ver perfil</a>
-                </li>
-                <li>
-                  <a href="../profile/edit.html" class="slide-item"
-                    >Editar perfil</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </aside>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="#">
+              <i class="side-menu__icon fe fe-users"></i>
+              <span class="side-menu__label">Mentores</span>
+              <i class="angle fa fa-angle-right"></i>
+            </a>
+            <ul class="slide-menu">
+              <li>
+                <a href="../mentors/search.html" class="slide-item">Buscar</a>
+              </li>
+              <li>
+                <a href="../mentors/agenda.html" class="slide-item">Agenda</a>
+              </li>
+              <li>
+                <a href="../mentors/history.html" class="slide-item">Histórico</a>
+              </li>
+            </ul>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="#">
+              <i class="side-menu__icon fe fe-user"></i>
+              <span class="side-menu__label">Perfil do usuário</span>
+              <i class="angle fa fa-angle-right"></i>
+            </a>
+            <ul class="slide-menu">
+              <li>
+                <a href="../profile/" class="slide-item">Ver perfil</a>
+              </li>
+              <li>
+                <a href="../profile/edit.html" class="slide-item">Editar perfil</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
 
-        <div class="app-header header">
-          <div class="container-fluid">
-            <div class="d-flex">
-              <a
-                class="app-sidebar__toggle"
-                data-bs-toggle="sidebar"
-                href="#"
-              ></a>
-              <a class="header-brand1 d-flex d-md-none" href="./">
-                <img
-                  src="../../../assets/images/condor/logo/white.svg"
-                  class="header-brand-img desktop-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/brand/white.svg"
-                  class="header-brand-img toggle-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/brand/default.svg"
-                  class="header-brand-img light-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/logo/default.svg"
-                  class="header-brand-img light-logo1"
-                  alt="logo"
-                />
-              </a>
-              <div class="d-flex order-lg-2 ms-auto header-right-icons">
-                <button
-                  class="navbar-toggler navresponsive-toggler d-md-none ms-auto"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent-4"
-                >
-                  <span
-                    class="navbar-toggler-icon fe fe-more-vertical text-dark"
-                  ></span>
-                </button>
-                <div class="dropdown d-none d-md-flex profile-1">
-                  <a
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    class="nav-link pe-2 leading-none d-flex"
-                  >
-                    <span>
-                      <img
-                        src="../../../assets/images/users/8.jpg"
-                        alt="profile-user"
-                        class="avatar profile-user brround cover-image"
-                      />
-                    </span>
-                  </a>
-                  <div
-                    class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
-                  >
-                    <div class="drop-heading">
-                      <div class="text-center">
-                        <h5 class="text-dark mb-0">Elizabeth Dyer</h5>
-                        <small class="text-muted">Administrator</small>
-                      </div>
+      <div class="app-header header">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <a class="app-sidebar__toggle" data-bs-toggle="sidebar" href="#"></a>
+            <a class="header-brand1 d-flex d-md-none" href="./">
+              <img src="../../../assets/images/condor/logo/white.svg" class="header-brand-img desktop-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/brand/white.svg" class="header-brand-img toggle-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/brand/default.svg" class="header-brand-img light-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/logo/default.svg" class="header-brand-img light-logo1"
+                alt="logo" />
+            </a>
+            <div class="d-flex order-lg-2 ms-auto header-right-icons">
+              <div class="dropdown d-none d-md-flex">
+                <a class="nav-link icon theme-layout nav-link-bg layout-setting">
+                  <span class="dark-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                    data-bs-original-title="Dark Theme" aria-label="Dark Theme"><i class="fe fe-moon"></i></span>
+                  <span class="light-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                    data-bs-original-title="Light Theme" aria-label="Light Theme"><i class="fe fe-sun"></i></span>
+                </a>
+              </div>
+              <div class="dropdown d-none d-md-flex">
+                <a class="nav-link icon full-screen-link nav-link-bg">
+                  <i class="fe fe-minimize fullscreen-button"></i>
+                </a>
+              </div>
+              <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fe fe-more-vertical text-dark"></span>
+              </button>
+              <div class="dropdown d-none d-md-flex profile-1">
+                <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex">
+                  <span>
+                    <img src="../../../assets/images/condor/persons/herbart.jpg" alt="profile-user"
+                      class="avatar profile-user brround cover-image" />
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <div class="drop-heading">
+                    <div class="text-center">
+                      <h5 class="text-dark mb-0">Herbart Azevedo</h5>
+                      <small class="text-muted">Premium Member</small>
                     </div>
-                    <div class="dropdown-divider m-0"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="dropdown-icon fe fe-user"></i> Profile
-                    </a>
-                    <a class="dropdown-item" href="../auth/login.html">
-                      <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
-                    </a>
                   </div>
-                </div>
-                <div class="dropdown d-none d-md-flex header-settings">
-                  <a
-                    href="#"
-                    class="nav-link icon"
-                    data-bs-toggle="sidebar-right"
-                    data-target=".sidebar-right"
-                  >
-                    <i class="fe fe-menu"></i>
+                  <div class="dropdown-divider m-0"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-user"></i> Perfil
+                  </a>
+                  <a class="dropdown-item" href="./auth/login.html">
+                    <i class="dropdown-icon fe fe-alert-circle"></i> Sair
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="
+      </div>
+      <div class="
             mb-1
             navbar navbar-expand-lg
             responsive-navbar
             navbar-dark
             d-md-none
             bg-white
-          "
-        >
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <div class="d-flex order-lg-2 ms-auto">
-              <div class="dropdown d-md-flex profile-1">
-                <a
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  class="nav-link pe-2 leading-none d-flex"
-                >
-                  <span>
-                    <img
-                      src="../../../assets/images/users/8.jpg"
-                      alt="profile-user"
-                      class="avatar profile-user brround cover-image"
-                    />
-                  </span>
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
-                >
-                  <div class="drop-heading">
-                    <div class="text-center">
-                      <h5 class="text-dark mb-0">Elizabeth Dyer</h5>
-                      <small class="text-muted">Administrator</small>
-                    </div>
+          ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <div class="d-flex order-lg-2 ms-auto">
+            <div class="dropdown d-md-flex profile-1">
+              <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex">
+                <span>
+                  <img src="../../../assets/images/condor/persons/herbart.jpg" alt="profile-user"
+                    class="avatar profile-user brround cover-image" />
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <div class="drop-heading">
+                  <div class="text-center">
+                    <h5 class="text-dark mb-0">Herbart Azevedo</h5>
+                    <small class="text-muted">Premium Member</small>
                   </div>
-                  <div class="dropdown-divider m-0"></div>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon fe fe-user"></i> Profile
-                  </a>
-                  <a class="dropdown-item" href="../auth/login.html">
-                    <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
-                  </a>
                 </div>
-              </div>
-              <div class="dropdown d-md-flex header-settings">
-                <a
-                  href="#"
-                  class="nav-link icon"
-                  data-bs-toggle="sidebar-right"
-                  data-target=".sidebar-right"
-                >
-                  <i class="fe fe-menu"></i>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon fe fe-user"></i> Perfil
+                </a>
+                <a class="dropdown-item" href="../auth/login.html">
+                  <i class="dropdown-icon fe fe-alert-circle"></i> Sair
                 </a>
               </div>
+            </div>
+            <div class="dropdown d-md-flex header-settings">
+              <a href="#" class="nav-link icon" data-bs-toggle="sidebar-right" data-target=".sidebar-right">
+                <i class="fe fe-menu"></i>
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="app-content">
-          <div class="side-app">
-            <div class="page-header">
-              <div>
-                <h1 class="page-title">Buscar mentores</h1>
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Condor Class</a></li>
-                  <li class="breadcrumb-item"><a href="#">Mentores</a></li>
-                  <li class="breadcrumb-item active">Buscar</li>
-                </ol>
+      <div class="app-content">
+        <div class="side-app">
+          <div class="page-header">
+            <div>
+              <h1 class="page-title">Buscar mentores</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Condor Class</a></li>
+                <li class="breadcrumb-item"><a href="#">Mentores</a></li>
+                <li class="breadcrumb-item active">Buscar</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <div class="bg-white p-4 rounded-3">
+                <div class="form-group">
+                  <label class="form-label">Área de interesse</label>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Busque por área de interesse" />
+                    </div>
+                    <span class="col-auto">
+                      <button class="btn btn-secondary">
+                        <i class="fe fe-search"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="col-12 col-lg-3">
+              <div class="bg-white p-4 rounded-3">
+                <div class="card-body">
+                  <div class="wd-200 mg-b-30">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                      </div><input class="form-control fc-datepicker hasDatepicker" placeholder="MM/DD/YYYY" type="text"
+                        id="dp1648062003052">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="bg-white p-4 rounded-3">
+                <div class="card-body">
+                  <div class="wd-200 mg-b-30">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                      </div><input class="form-control fc-datepicker hasDatepicker" placeholder="MM/DD/YYYY" type="text"
+                        id="dp1648062003052">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <!--Column 2-->
+            <div class="col-xl-12">
+              <div class="card custom-card mt-3">
+                <div class="card-body">
+                  <div class="d-flex flex-row justify-content-end">
+                    <div class="flex-grow-1">
+                      <h3 class="card-title mb-6">Mentores recomendados para você</h3>
+                    </div>
+
+                    <div>
+                      <div class="input-group">
+                        <button class="
+                              btn btn-secondary
+                              input-group-text
+                              text-white
+                            ">
+                          Ver todos
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table border text-nowrap text-md-nowrap m-0">
+                      <thead>
+                        <tr>
+                          <th>Mentor</th>
+                          <th>Avaliação</th>
+                          <th>Nº de mentorias</th>
+                          <th>Especialidade</th>
+                          <th>Preço hora/mentoria</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/muriel_souza.jpg);
+                                  "></span>
+                              Muriel Souza
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              5 (50 avaliações)
+                            </p>
+                          </td>
+                          <td>52</td>
+                          <td>Inovação nos Negócios</td>
+                          <td>R$200</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/clara_xavier.jpg);
+                                  "></span>
+                              Clara Xavier
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              4,8 (32 avaliações)
+                            </p>
+                          </td>
+                          <td>13</td>
+                          <td>Gestão de Pessoas</td>
+                          <td>R$100</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/alícia_viana.jpeg);
+                                  "></span>
+                              Alícia Viana
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              5 (16 avaliações)
+                            </p>
+                          </td>
+                          <td>7</td>
+                          <td>Mercado e Consumo</td>
+                          <td>R$500</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/lucas_siqueira.jpeg);
+                                  "></span>
+                              Lucas Siqueira
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              4,7 (35 avaliações)
+                            </p>
+                          </td>
+                          <td>21</td>
+                          <td>Design de Interação</td>
+                          <td>R$350</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/roberto_botelho.jpeg);
+                                  "></span>
+                              Roberto Botelho
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              5 (43 avaliações)
+                            </p>
+                          </td>
+                          <td>33</td>
+                          <td>UX/UI</td>
+                          <td>R$125</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/luna_leal.jpg);
+                                  "></span>
+                              Lunna Leal
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              4,9 (7 avaliações)
+                            </p>
+                          </td>
+                          <td>5</td>
+                          <td>Gestão de Projetos</td>
+                          <td>R$70</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/arnaldo_bandeira.jpeg);
+                                  "></span>
+                              Arnaldo Bandeira
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              5 (39 avaliações)
+                            </p>
+                          </td>
+                          <td>19</td>
+                          <td>Marcas e Patentes</td>
+                          <td>R$85</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/gustavo_raposo.jpeg);
+                                  "></span>
+                              Gustavo Raposo
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              4,8 (57 avaliações)
+                            </p>
+                          </td>
+                          <td>67</td>
+                          <td>Product Designer</td>
+                          <td>R$170</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <span class="avatar avatar-md brround me-2" style="
+                                    background-image: url(../../../assets/images/condor/persons/yuri_aragão.jpeg);
+                                  "></span>
+                              Yuri Aragão
+                            </div>
+                          </td>
+                          <td>
+                            <i class="fa fa-star-o d-inline" style="color: #FB6B25;"></i>
+                            <p class="d-inline">
+                              5 (37 avaliações)
+                            </p>
+                          </td>
+                          <td>48</td>
+                          <td>Direito Previdenciário</td>
+                          <td>R$120</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Column 2 FINAL-->
           </div>
         </div>
       </div>
@@ -296,13 +470,8 @@
         <div class="panel panel-primary card mb-0 shadow-none border-0">
           <div class="tab-menu-heading border-0 d-flex p-3">
             <div class="card-options ms-auto">
-              <a
-                href="#"
-                class="sidebar-icon text-end float-end me-1"
-                data-bs-toggle="sidebar-right"
-                data-target=".sidebar-right"
-                ><i class="fe fe-x text-white"></i
-              ></a>
+              <a href="#" class="sidebar-icon text-end float-end me-1" data-bs-toggle="sidebar-right"
+                data-target=".sidebar-right"><i class="fe fe-x text-white"></i></a>
             </div>
           </div>
           <div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
@@ -310,16 +479,12 @@
               <div class="card-body text-center">
                 <div class="dropdown user-pro-body">
                   <div>
-                    <img
-                      alt="user-img"
-                      class="avatar avatar-xl brround mx-auto text-center"
-                      src="../../../assets/images/faces/6.jpg"
-                    /><span
-                      class="avatar-status profile-status bg-green"
-                    ></span>
+                    <img alt="user-img" class="avatar avatar-xl brround mx-auto text-center"
+                      src="../../../assets/images/condor/persons/herbart.jpg" /><span
+                      class="avatar-status profile-status bg-green"></span>
                   </div>
                   <div class="user-info mg-t-20">
-                    <h6 class="fw-semibold mt-2 mb-0">Mintrona Pechon</h6>
+                    <h6 class="fw-semibold mt-2 mb-0">Herbart Azevedo</h6>
                     <span class="mb-0 text-muted fs-12">Premium Member</span>
                   </div>
                 </div>
@@ -328,22 +493,19 @@
                 <div class="d-flex">
                   <i class="fe fe-user me-3 tx-20 text-muted"></i>
                   <div class="pt-1">
-                    <h6 class="mb-0">My Profile</h6>
+                    <h6 class="mb-0">Meu Perfil</h6>
                     <p class="tx-12 mb-0 text-muted">
-                      Profile Personal information
+                      Configure seu perfil
                     </p>
                   </div>
                 </div>
               </a>
-              <a
-                class="dropdown-item d-flex border-bottom"
-                href="../auth/login.html"
-              >
+              <a class="dropdown-item d-flex border-bottom" href="../auth/login.html">
                 <div class="d-flex">
                   <i class="fe fe-power me-3 tx-20 text-muted"></i>
                   <div class="pt-1">
-                    <h6 class="mb-0">Sign Out</h6>
-                    <p class="tx-12 mb-0 text-muted">Account Signout</p>
+                    <h6 class="mb-0">Sair</h6>
+                    <p class="tx-12 mb-0 text-muted">Saia da sua conta</p>
                   </div>
                 </div>
               </a>
@@ -376,5 +538,6 @@
     <script src="../../../assets/plugins/sidebar/sidebar.js"></script>
     <script src="../../../assets/plugins/p-scroll/pscroll.js"></script>
     <script src="../../../assets/plugins/p-scroll/pscroll-1.js"></script>
-  </body>
+</body>
+
 </html>
