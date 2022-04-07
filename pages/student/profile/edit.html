@@ -1,550 +1,499 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="icon" href="../../../assets/images/condor/icon.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Condor Class - Editar perfil</title>
+  <link rel="icon" href="../../../assets/images/condor/icon.svg" />
 
-    <link
-      href="../../../assets/plugins/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/style.css" rel="stylesheet" />
+  <title>Condor Class - Editar perfil</title>
 
-    <link href="../../../assets/css/skin-modes.css" rel="stylesheet" />
-    <link href="../../../assets/css/sidemenu.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../../assets/css/style.css" rel="stylesheet" />
 
-    <link
-      href="../../../assets/plugins/charts-c3/c3-chart.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/p-scroll/perfect-scrollbar.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/icons.css" rel="stylesheet" />
-    <link href="../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
-    <link
-      href="../../../assets/plugins/select2/select2.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/datatable/css/dataTables.bootstrap5.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../../assets/plugins/datatable/responsive.bootstrap5.css"
-      rel="stylesheet"
-    />
-    <link href="../../../assets/css/color1.css" rel="stylesheet" />
-  </head>
+  <link href="../../../assets/css/skin-modes.css" rel="stylesheet" />
+  <link href="../../../assets/css/sidemenu.css" rel="stylesheet" />
 
-  <body class="app sidebar-mini">
-    <div id="global-loader">
-      <img
-        src="../../../assets/images/loader.svg"
-        class="loader-img"
-        alt="Loader"
-      />
-    </div>
+  <link href="../../../assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="../../../assets/css/icons.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/select2/select2.min.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/datatable/css/dataTables.bootstrap5.css" rel="stylesheet" />
+  <link href="../../../assets/plugins/datatable/responsive.bootstrap5.css" rel="stylesheet" />
+  <link href="../../../assets/css/color1.css" rel="stylesheet" />
+</head>
 
-    <div class="page">
-      <div class="page-main">
-        <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
-        <aside class="app-sidebar">
-          <div class="side-header">
-            <a class="header-brand1" href="#">
-              <img
-                src="../../../assets/images/condor/logo/white.svg"
-                class="header-brand-img desktop-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/brand/white.svg"
-                class="header-brand-img toggle-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/brand/default.svg"
-                class="header-brand-img light-logo"
-                alt="logo"
-              />
-              <img
-                src="../../../assets/images/condor/logo/default.svg"
-                class="header-brand-img light-logo1"
-                alt="logo"
-              />
+<body class="app sidebar-mini">
+  <div id="global-loader">
+    <img src="../../../assets/images/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+
+  <div class="page">
+    <div class="page-main">
+      <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+      <aside class="app-sidebar">
+        <div class="side-header">
+          <a class="header-brand1" href="#">
+            <img src="../../../assets/images/condor/logo/white.svg" class="header-brand-img desktop-logo" alt="logo" />
+            <img src="../../../assets/images/condor/brand/white.svg" class="header-brand-img toggle-logo" alt="logo" />
+            <img src="../../../assets/images/condor/brand/default.svg" class="header-brand-img light-logo" alt="logo" />
+            <img src="../../../assets/images/condor/logo/default.svg" class="header-brand-img light-logo1" alt="logo" />
+          </a>
+        </div>
+        <ul class="side-menu">
+          <li>
+            <h3>Menu</h3>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" href="../">
+              <i class="side-menu__icon fe fe-home"></i>
+              <span class="side-menu__label">Início</span>
             </a>
-          </div>
-          <ul class="side-menu">
-            <li><h3>Menu</h3></li>
-            <li class="slide">
-              <a class="side-menu__item" href="../">
-                <i class="side-menu__icon fe fe-home"></i>
-                <span class="side-menu__label">Início</span>
-              </a>
-            </li>
-            <li class="slide">
-              <a class="side-menu__item" data-bs-toggle="slide" href="#">
-                <i class="side-menu__icon fe fe-users"></i>
-                <span class="side-menu__label">Mentores</span>
-                <i class="angle fa fa-angle-right"></i>
-              </a>
-              <ul class="slide-menu">
-                <li>
-                  <a href="../mentors/search.html" class="slide-item">Buscar</a>
-                </li>
-                <li>
-                  <a href="../mentors/agenda.html" class="slide-item">Agenda</a>
-                </li>
-                <li>
-                  <a href="../mentors/history.html" class="slide-item"
-                    >Histórico</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="slide">
-              <a class="side-menu__item" data-bs-toggle="slide" href="#">
-                <i class="side-menu__icon fe fe-user"></i>
-                <span class="side-menu__label">Perfil do usuário</span>
-                <i class="angle fa fa-angle-right"></i>
-              </a>
-              <ul class="slide-menu">
-                <li>
-                  <a href="../profile/" class="slide-item">Ver perfil</a>
-                </li>
-                <li>
-                  <a href="../profile/edit.html" class="slide-item"
-                    >Editar perfil</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </aside>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="#">
+              <i class="side-menu__icon fe fe-users"></i>
+              <span class="side-menu__label">Mentores</span>
+              <i class="angle fa fa-angle-right"></i>
+            </a>
+            <ul class="slide-menu">
+              <li>
+                <a href="../mentors/search.html" class="slide-item">Buscar</a>
+              </li>
+              <li>
+                <a href="../mentors/agenda.html" class="slide-item">Agenda</a>
+              </li>
+              <li>
+                <a href="../mentors/history.html" class="slide-item">Histórico</a>
+              </li>
+            </ul>
+          </li>
+          <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="#">
+              <i class="side-menu__icon fe fe-user"></i>
+              <span class="side-menu__label">Perfil do usuário</span>
+              <i class="angle fa fa-angle-right"></i>
+            </a>
+            <ul class="slide-menu">
+              <li>
+                <a href="../profile/" class="slide-item">Ver perfil</a>
+              </li>
+              <li>
+                <a href="../profile/edit.html" class="slide-item">Editar perfil</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
 
-        <div class="app-header header">
-          <div class="container-fluid">
-            <div class="d-flex">
-              <a
-                aria-label="Hide Sidebar"
-                class="app-sidebar__toggle"
-                data-bs-toggle="sidebar"
-                href="#"
-              ></a>
-              <a class="header-brand1 d-flex d-md-none" href="./">
-                <img
-                  src="../../../assets/images/condor/logo/white.svg"
-                  class="header-brand-img desktop-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/brand/white.svg"
-                  class="header-brand-img toggle-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/brand/default.svg"
-                  class="header-brand-img light-logo"
-                  alt="logo"
-                />
-                <img
-                  src="../../../assets/images/condor/logo/default.svg"
-                  class="header-brand-img light-logo1"
-                  alt="logo"
-                />
-              </a>
-              <div class="d-flex order-lg-2 ms-auto header-right-icons">
-                <div class="dropdown d-none d-md-flex">
-                  <a class="nav-link icon theme-layout nav-link-bg layout-setting">
-                    <span class="dark-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title="" data-bs-original-title="Dark Theme" aria-label="Dark Theme"><i class="fe fe-moon"></i></span>
-                    <span class="light-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title="" data-bs-original-title="Light Theme" aria-label="Light Theme"><i class="fe fe-sun"></i></span>
-                  </a>
-                </div>
-                <div class="dropdown d-none d-md-flex">
-                  <a class="nav-link icon full-screen-link nav-link-bg">
-                    <i class="fe fe-minimize fullscreen-button"></i>
-                  </a>
-                </div>
-                <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
-                  aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon fe fe-more-vertical text-dark"></span>
-                </button>
-                <div class="dropdown d-none d-md-flex profile-1">
-                  <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex">
-                    <span>
-                      <img src="../../../assets/images/condor/persons/herbart.jpg" alt="profile-user"
-                        class="avatar profile-user brround cover-image" />
-                    </span>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <div class="drop-heading">
-                      <div class="text-center">
-                        <h5 class="text-dark mb-0">Herbart Azevedo</h5>
-                        <small class="text-muted">Premium Member</small>
-                      </div>
+      <div class="app-header header">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="#"></a>
+            <a class="header-brand1 d-flex d-md-none" href="./">
+              <img src="../../../assets/images/condor/logo/white.svg" class="header-brand-img desktop-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/brand/white.svg" class="header-brand-img toggle-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/brand/default.svg" class="header-brand-img light-logo"
+                alt="logo" />
+              <img src="../../../assets/images/condor/logo/default.svg" class="header-brand-img light-logo1"
+                alt="logo" />
+            </a>
+            <div class="d-flex order-lg-2 ms-auto header-right-icons">
+              <div class="dropdown d-none d-md-flex">
+                <a class="nav-link icon theme-layout nav-link-bg layout-setting">
+                  <span class="dark-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                    data-bs-original-title="Dark Theme" aria-label="Dark Theme"><i class="fe fe-moon"></i></span>
+                  <span class="light-layout" data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                    data-bs-original-title="Light Theme" aria-label="Light Theme"><i class="fe fe-sun"></i></span>
+                </a>
+              </div>
+              <div class="dropdown d-none d-md-flex">
+                <a class="nav-link icon full-screen-link nav-link-bg">
+                  <i class="fe fe-minimize fullscreen-button"></i>
+                </a>
+              </div>
+              <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fe fe-more-vertical text-dark"></span>
+              </button>
+              <div class="dropdown d-none d-md-flex profile-1">
+                <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex">
+                  <span>
+                    <img src="../../../assets/images/condor/persons/herbart.jpg" alt="profile-user"
+                      class="avatar profile-user brround cover-image" />
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <div class="drop-heading">
+                    <div class="text-center">
+                      <h5 class="text-dark mb-0">Herbart Azevedo</h5>
+                      <small class="text-muted">Premium Member</small>
                     </div>
-                    <div class="dropdown-divider m-0"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="dropdown-icon fe fe-user"></i> Perfil
-                    </a>
-                    <a class="dropdown-item" href="./auth/login.html">
-                      <i class="dropdown-icon fe fe-alert-circle"></i> Sair
-                    </a>
                   </div>
+                  <div class="dropdown-divider m-0"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-user"></i> Perfil
+                  </a>
+                  <a class="dropdown-item" href="./auth/login.html">
+                    <i class="dropdown-icon fe fe-alert-circle"></i> Sair
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="
+      </div>
+      <div class="
             mb-1
             navbar navbar-expand-lg
             responsive-navbar
             navbar-dark
             d-md-none
             bg-white
-          "
-        >
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <div class="d-flex order-lg-2 ms-auto">
-              <div class="dropdown d-md-flex profile-1">
-                <a
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  class="nav-link pe-2 leading-none d-flex"
-                >
-                  <span>
-                    <img
-                      src="../../../assets/images/users/8.jpg"
-                      alt="profile-user"
-                      class="avatar profile-user brround cover-image"
-                    />
-                  </span>
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
-                >
-                  <div class="drop-heading">
-                    <div class="text-center">
-                      <h5 class="text-dark mb-0">Elizabeth Dyer</h5>
-                      <small class="text-muted">Administrator</small>
-                    </div>
+          ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <div class="d-flex order-lg-2 ms-auto">
+            <div class="dropdown d-md-flex profile-1">
+              <a href="#" data-bs-toggle="dropdown" class="nav-link pe-2 leading-none d-flex">
+                <span>
+                  <img src="../../../assets/images/users/8.jpg" alt="profile-user"
+                    class="avatar profile-user brround cover-image" />
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <div class="drop-heading">
+                  <div class="text-center">
+                    <h5 class="text-dark mb-0">Elizabeth Dyer</h5>
+                    <small class="text-muted">Administrator</small>
                   </div>
-                  <div class="dropdown-divider m-0"></div>
-                  <a class="dropdown-item" href="#">
-                    <i class="dropdown-icon fe fe-user"></i> Profile
-                  </a>
-                  <a class="dropdown-item" href="../auth/login.html">
-                    <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
-                  </a>
                 </div>
-              </div>
-              <div class="dropdown d-md-flex header-settings">
-                <a
-                  href="#"
-                  class="nav-link icon"
-                  data-bs-toggle="sidebar-right"
-                  data-target=".sidebar-right"
-                >
-                  <i class="fe fe-menu"></i>
+                <div class="dropdown-divider m-0"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="dropdown-icon fe fe-user"></i> Profile
+                </a>
+                <a class="dropdown-item" href="../auth/login.html">
+                  <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
                 </a>
               </div>
+            </div>
+            <div class="dropdown d-md-flex header-settings">
+              <a href="#" class="nav-link icon" data-bs-toggle="sidebar-right" data-target=".sidebar-right">
+                <i class="fe fe-menu"></i>
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="app-content">
-          <div class="side-app">
-            <div class="page-header">
-              <div>
-                <h1 class="page-title">Editar perfil</h1>
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Condor Class</a></li>
-                  <li class="breadcrumb-item" aria-current="page">
-                    <a href="./">Perfil</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Editar
-                  </li>
-                </ol>
-              </div>
+      <div class="app-content">
+        <div class="side-app">
+          <div class="page-header">
+            <div>
+              <h1 class="page-title">Editar perfil</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Condor Class</a></li>
+                <li class="breadcrumb-item" aria-current="page">
+                  <a href="./">Perfil</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Editar
+                </li>
+              </ol>
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
-                <form class="card">
-                  <div class="card-header">
-                    <div class="card-title">Alterar senha</div>
+          <div class="row">
+            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+              <!-- FORM IMAGEM -->
+              <form class="card">
+                <div class="card-header">
+                  <div class="card-title">Alterar imagem de perfil</div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex mb-3">
+                    <img alt="User Avatar" class="rounded-circle avatar-xl me-2"
+                      src="../../../assets/images/condor/persons/herbart.jpg" />
                   </div>
-                  <div class="card-body">
-                    <div class="d-flex mb-3">
-                      <img
-                        alt="User Avatar"
-                        class="rounded-circle avatar-lg me-2"
-                        src="../../../assets/images/users/8.jpg"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Senha atual</label>
-                      <input type="password" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Nova senha</label>
-                      <input type="password" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Confirmar nova senha</label>
-                      <input type="password" class="form-control" />
+                  <div class="form-group">
+                    <div class="form-file">
+                      <input type="file" class="form-file-input" name="example-file-input-custom">
+                      <label class="form-file-label">Escolha sua nova foto de perfil</label>
                     </div>
                   </div>
-                  <div class="card-footer text-end">
-                    <a href="#" class="btn btn-primary">Alterar</a>
-                    <button type="reset" class="btn btn-danger">
-                      Cancelar
-                    </button>
+                </div>
+                <div class="card-footer text-end">
+                  <button type="reset" class="btn btn-danger">
+                    Cancelar
+                  </button>
+                  <a href="#" class="btn btn-primary">Alterar</a>
+                </div>
+              </form>
+              <!-- FORM SENHA -->
+              <form class="card">
+                <div class="card-header">
+                  <div class="card-title">Alterar senha</div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">Senha atual</label>
+                    <input type="password" class="form-control" />
                   </div>
-                </form>
-              </div>
-              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <form class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">Editar perfil</h3>
+                  <div class="form-group">
+                    <label class="form-label">Nova senha</label>
+                    <input type="password" class="form-control" />
                   </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputname">Nome completo</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputname"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">E-mail</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputnumber">Telefone</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="exampleInputnumber"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Sobre mim</label>
-                      <textarea class="form-control" rows="6"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Website</label>
-                      <input class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Data de nascimento</label>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <select class="form-control select2 form-select">
-                            <option value="0">Dia</option>
-                            <option value="1">01</option>
-                            <option value="2">02</option>
-                            <option value="3">03</option>
-                            <option value="4">04</option>
-                            <option value="5">05</option>
-                            <option value="6">06</option>
-                            <option value="7">07</option>
-                            <option value="8">08</option>
-                            <option value="9">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                          </select>
-                        </div>
-                        <div class="col-md-4">
-                          <select class="form-control select2 form-select">
-                            <option value="0">Mês</option>
-                            <option value="1">Jan</option>
-                            <option value="2">Feb</option>
-                            <option value="3">Mar</option>
-                            <option value="4">Apr</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">Aug</option>
-                            <option value="9">Sep</option>
-                            <option value="10">Oct</option>
-                            <option value="11">Nov</option>
-                            <option value="12">Dec</option>
-                          </select>
-                        </div>
-                        <div class="col-md-4">
-                          <select class="form-control select2 form-select">
-                            <option value="0">Ano</option>
-                            <option value="1">2018</option>
-                            <option value="2">2017</option>
-                            <option value="3">2016</option>
-                            <option value="4">2015</option>
-                            <option value="5">2014</option>
-                            <option value="6">2013</option>
-                            <option value="7">2102</option>
-                            <option value="8">2012</option>
-                            <option value="9">2011</option>
-                            <option value="10">2010</option>
-                            <option value="11">2009</option>
-                            <option value="12">2008</option>
-                            <option value="13">2007</option>
-                            <option value="14">2006</option>
-                            <option value="15">2005</option>
-                            <option value="16">2004</option>
-                            <option value="17">2003</option>
-                            <option value="18">2002</option>
-                            <option value="19">2001</option>
-                            <option value="20">1999</option>
-                            <option value="21">1998</option>
-                            <option value="22">1997</option>
-                            <option value="23">1996</option>
-                            <option value="24">1995</option>
-                            <option value="25">1994</option>
-                            <option value="26">1993</option>
-                            <option value="27">1992</option>
-                            <option value="28">1991</option>
-                            <option value="29">1990</option>
-                            <option value="30">1989</option>
-                            <option value="31">1988</option>
-                          </select>
-                        </div>
+                  <div class="form-group">
+                    <label class="form-label">Confirmar nova senha</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button type="reset" class="btn btn-danger">
+                    Cancelar
+                  </button>
+                  <a href="#" class="btn btn-primary">Alterar</a>
+                </div>
+              </form>
+              <!-- FORM PERFIL -->
+              <form class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Editar perfil</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="exampleInputname">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputname" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="exampleInputname">Sobrenome</label>
+                        <input type="text" class="form-control" id="exampleInputname" />
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer text-end">
-                    <a href="#" class="btn btn-success mt-1">Save</a>
-                    <button type="reset" class="btn btn-danger mt-1">
-                      Cancel
-                    </button>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">E-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
                   </div>
-                </form>
-              </div>
+                  <div class="form-group">
+                    <label for="exampleInputnumber">Telefone</label>
+                    <input type="number" class="form-control" id="exampleInputnumber" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Sobre mim</label>
+                    <textarea class="form-control" rows="6"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Data de nascimento</label>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="form-control select2 form-select">
+                          <option value="0">Dia</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <select class="form-control select2 form-select">
+                          <option value="0">Mês</option>
+                          <option value="1">Jan</option>
+                          <option value="2">Fev</option>
+                          <option value="3">Mar</option>
+                          <option value="4">Abr</option>
+                          <option value="5">Mai</option>
+                          <option value="6">Jun</option>
+                          <option value="7">Jul</option>
+                          <option value="8">Ago</option>
+                          <option value="9">Set</option>
+                          <option value="10">Out</option>
+                          <option value="11">Nov</option>
+                          <option value="12">Dez</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <select class="form-control select2 form-select">
+                          <option value="0">Ano</option>
+                          <option value="1">2018</option>
+                          <option value="2">2017</option>
+                          <option value="3">2016</option>
+                          <option value="4">2015</option>
+                          <option value="5">2014</option>
+                          <option value="6">2013</option>
+                          <option value="7">2102</option>
+                          <option value="8">2012</option>
+                          <option value="9">2011</option>
+                          <option value="10">2010</option>
+                          <option value="11">2009</option>
+                          <option value="12">2008</option>
+                          <option value="13">2007</option>
+                          <option value="14">2006</option>
+                          <option value="15">2005</option>
+                          <option value="16">2004</option>
+                          <option value="17">2003</option>
+                          <option value="18">2002</option>
+                          <option value="19">2001</option>
+                          <option value="20">1999</option>
+                          <option value="21">1998</option>
+                          <option value="22">1997</option>
+                          <option value="23">1996</option>
+                          <option value="24">1995</option>
+                          <option value="25">1994</option>
+                          <option value="26">1993</option>
+                          <option value="27">1992</option>
+                          <option value="28">1991</option>
+                          <option value="29">1990</option>
+                          <option value="30">1989</option>
+                          <option value="31">1988</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="exampleInputname">País</label>
+                        <select name="country" class="form-control form-select select2"
+                          data-bs-placeholder="Select Country">
+                          <option value="br">Alemanha</option>
+                          <option value="cz">Argentina</option>
+                          <option value="pl" selected="">Brasil</option>
+                          <option value="de">Uruguai</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="exampleInputname">Cidade</label>
+                        <select name="country" class="form-control form-select select2"
+                          data-bs-placeholder="Select Country">
+                          <option value="br">Curitiba</option>
+                          <option value="pl" selected="">Natal</option>
+                          <option value="cz">Recife</option>
+                          <option value="de">São Paulo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button type="reset" class="btn btn-danger mt-1">
+                    Cancelar
+                  </button>
+                  <a href="#" class="btn btn-primary mt-1">Salvar</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="sidebar sidebar-right sidebar-animate">
-        <div class="panel panel-primary card mb-0 shadow-none border-0">
-          <div class="tab-menu-heading border-0 d-flex p-3">
-            <div class="card-options ms-auto">
-              <a
-                href="#"
-                class="sidebar-icon text-end float-end me-1"
-                data-bs-toggle="sidebar-right"
-                data-target=".sidebar-right"
-                ><i class="fe fe-x text-white"></i
-              ></a>
-            </div>
-          </div>
-          <div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
-            <div class="tab-content">
-              <div class="card-body text-center">
-                <div class="dropdown user-pro-body">
-                  <div>
-                    <img
-                      alt="user-img"
-                      class="avatar avatar-xl brround mx-auto text-center"
-                      src="../../../assets/images/faces/6.jpg"
-                    /><span
-                      class="avatar-status profile-status bg-green"
-                    ></span>
-                  </div>
-                  <div class="user-info mg-t-20">
-                    <h6 class="fw-semibold mt-2 mb-0">Mintrona Pechon</h6>
-                    <span class="mb-0 text-muted fs-12">Premium Member</span>
-                  </div>
-                </div>
-              </div>
-              <a class="dropdown-item d-flex border-bottom border-top" href="#">
-                <div class="d-flex">
-                  <i class="fe fe-user me-3 tx-20 text-muted"></i>
-                  <div class="pt-1">
-                    <h6 class="mb-0">My Profile</h6>
-                    <p class="tx-12 mb-0 text-muted">
-                      Profile Personal information
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <a
-                class="dropdown-item d-flex border-bottom"
-                href="../auth/login.html"
-              >
-                <div class="d-flex">
-                  <i class="fe fe-power me-3 tx-20 text-muted"></i>
-                  <div class="pt-1">
-                    <h6 class="mb-0">Sign Out</h6>
-                    <p class="tx-12 mb-0 text-muted">Account Signout</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <div class="container">
-          <div class="row align-items-center flex-row-reverse">
-            <div class="col-md-12 col-sm-12 text-center">
-              Copyright © 2021 <a href="#">Condor Class</a>.
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
-    <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <div class="sidebar sidebar-right sidebar-animate">
+      <div class="panel panel-primary card mb-0 shadow-none border-0">
+        <div class="tab-menu-heading border-0 d-flex p-3">
+          <div class="card-options ms-auto">
+            <a href="#" class="sidebar-icon text-end float-end me-1" data-bs-toggle="sidebar-right"
+              data-target=".sidebar-right"><i class="fe fe-x text-white"></i></a>
+          </div>
+        </div>
+        <div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
+          <div class="tab-content">
+            <div class="card-body text-center">
+              <div class="dropdown user-pro-body">
+                <div>
+                  <img alt="user-img" class="avatar avatar-xl brround mx-auto text-center"
+                    src="../../../assets/images/faces/6.jpg" /><span
+                    class="avatar-status profile-status bg-green"></span>
+                </div>
+                <div class="user-info mg-t-20">
+                  <h6 class="fw-semibold mt-2 mb-0">Mintrona Pechon</h6>
+                  <span class="mb-0 text-muted fs-12">Premium Member</span>
+                </div>
+              </div>
+            </div>
+            <a class="dropdown-item d-flex border-bottom border-top" href="#">
+              <div class="d-flex">
+                <i class="fe fe-user me-3 tx-20 text-muted"></i>
+                <div class="pt-1">
+                  <h6 class="mb-0">My Profile</h6>
+                  <p class="tx-12 mb-0 text-muted">
+                    Profile Personal information
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item d-flex border-bottom" href="../auth/login.html">
+              <div class="d-flex">
+                <i class="fe fe-power me-3 tx-20 text-muted"></i>
+                <div class="pt-1">
+                  <h6 class="mb-0">Sign Out</h6>
+                  <p class="tx-12 mb-0 text-muted">Account Signout</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="../../../assets/js/jquery.min.js"></script>
-    <script src="../../../assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../../../assets/js/jquery.sparkline.min.js"></script>
-    <script src="../../../assets/js/circle-progress.min.js"></script>
-    <script src="../../../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-    <script src="../../../assets/js/custom.js"></script>
-    <script src="../../../assets/plugins/sidemenu/sidemenu.js"></script>
-    <script src="../../../assets/plugins/sidebar/sidebar.js"></script>
-    <script src="../../../assets/plugins/p-scroll/pscroll.js"></script>
-    <script src="../../../assets/plugins/p-scroll/pscroll-1.js"></script>
-  </body>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-md-12 col-sm-12 text-center">
+            Copyright © 2021 <a href="#">Condor Class</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <script src="../../../assets/js/jquery.min.js"></script>
+  <script src="../../../assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/jquery.sparkline.min.js"></script>
+  <script src="../../../assets/js/circle-progress.min.js"></script>
+  <script src="../../../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+  <script src="../../../assets/js/custom.js"></script>
+  <script src="../../../assets/plugins/sidemenu/sidemenu.js"></script>
+  <script src="../../../assets/plugins/sidebar/sidebar.js"></script>
+  <script src="../../../assets/plugins/p-scroll/pscroll.js"></script>
+  <script src="../../../assets/plugins/p-scroll/pscroll-1.js"></script>
+</body>
+
 </html>

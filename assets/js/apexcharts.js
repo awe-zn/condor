@@ -3111,8 +3111,8 @@
               }
             },
             background: 'transparent',
-            locales: [en],
-            defaultLocale: 'en',
+            locales: [pt-br],
+            defaultLocale: 'pt-br',
             dropShadow: {
               enabled: false,
               enabledOnSeries: undefined,

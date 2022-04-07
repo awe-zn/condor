@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 start: '2021-03-03T13:00:00',
                 constraint: 'businessHours'
             }, {
-                title: 'Meeting',
+                title: 'Reunião',
                 start: '2021-03-13T11:00:00',
                 constraint: 'availableForMeeting', // defined below
                 color: '#f35e90'
             }, {
-                title: 'Conference',
+                title: 'Conferência',
                 start: '2021-07-18',
                 end: '2021-07-20',
                 color: '#e67e22'
@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // customize the button names,
         // otherwise they'd all just say "list"
         views: {
-            listDay: { buttonText: 'list day' },
-            listWeek: { buttonText: 'list week' }
+            listDay: { buttonText: 'Dia' },
+            listWeek: { buttonText: 'Semana' }
         },
         initialView: 'listWeek',
         initialDate: '2021-07-12',
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Repeating Event',
             start: '2021-11-16T16:00:00'
         }, {
-            title: 'Conference',
+            title: 'Conferência',
             start: '2019-11-11',
             end: '2021-11-13'
         }, {
